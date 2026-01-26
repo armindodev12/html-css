@@ -15,7 +15,7 @@
     --cor4: #1a5c37;
     --cor5: #063d1e;
 
-    --font-padrao: 'Arial, Verdana, Malvetica, Sans-serif';
+    --font-padrao: Arial, Verdana, Malvetica, Sans-serif;
     --font-destaque: "Bebas Neue", sans-serif;
     --font-android: 'Android', cursive;
 
@@ -33,11 +33,13 @@ body {
      margin: auto;
 }
 header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     min-height: 150px;
     text-align: center;
      padding-top: 30px;
 }
 main p {
+    
         text-align: justify;
         margin: 15px 0px;
         line-height: 2em;
@@ -47,11 +49,12 @@ header > p {
     color: white;
     text-align: center;
     font-family: var(--font-padrao);
-    font-size: 2en;
+    font-size: 1em;
     max-width: 400px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 25px;
    
 }
 a.externo::after {
@@ -109,7 +112,7 @@ main img.pequena {
 header > h1 {
     color: white;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 3en;
+    font-size: 3em;
     margin-top: 30px;
     text-align: center;
     margin-bottom: 20px;
