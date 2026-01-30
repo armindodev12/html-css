@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login Moderna</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <!-- FORMULÁRIO DE LOGIN -->
+    <div class="form-container sign-in">
+      <form>
+        <h1>Entrar</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>Use sua palavra-passe</span>
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Palavra-passe">
+        <a href="#">Esqueci minha palavra-passe</a>
+        <button type="button" id="login">Entrar</button>
+      </form>
+    </div>
+
+    <!-- FORMULÁRIO DE CADASTRO -->
+    <div class="form-container sign-up">
+      <form>
+        <h1>Crie sua conta</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>Use seu e-mail para se registrar</span>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Palavra-passe">
+        <button type="button" id="register">Cadastrar-se</button>
+      </form>
+    </div>
+
+    <!-- PAINEL AZUL -->
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Bem-vindo de Volta!</h1>
+          <p>Acesse aos seus dados para usar todos os recursos.</p>
+          <button type="button" id="login-panel">Entrar</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Olá, usuário!</h1>
+          <p>Registe-se com seus dados pessoais.</p>
+          <button type="button" id="register-panel">Cadastrar-se</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
