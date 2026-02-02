@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td, th {
+            border: 1px solid black;
+            width: 500px;
+            padding: 10px;
+        }
+        caption {
+            background-color: rgb(32, 78, 80);
+            color: white;
+            padding: 15px;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgb(51, 77, 77);
+            color: white;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+            
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        th, .special {
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption> Dados de pessoas que gostam de certas disciplinas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Cidade</th>
+                <th scope="col">Disciplinas</th>
+                <th scope="col">Nº de gostos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maputo</td>
+                <td>Potuguês</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <td>Matola</td>
+                <td>Inglês</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td>Gaza</td>
+                <td>Matemática</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <td>Inhambane</td>
+                <td>História</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Beira</td>
+                <td>Geografia</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>Chimoio</td>
+                <td>Física</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td>Quelimane</td>
+                <td>Química</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td>Biologia</td>
+                <td>184</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td>Educação Física</td>
+                <td>154</td>
+            </tr>
+            <tr>
+                <td>Lichinga</td>
+                <td>DGD</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Pemba</td>
+                <td>Francês</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td>Inhambane</td>
+                <td>História</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Beira</td>
+                <td>Geografia</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>Chimoio</td>
+                <td>Física</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td>Quelimane</td>
+                <td>Química</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td>Biologia</td>
+                <td>184</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td>Educação Física</td>
+                <td>154</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</th>
+            <td class="special">-</td>
+            <td class="special">1115</td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

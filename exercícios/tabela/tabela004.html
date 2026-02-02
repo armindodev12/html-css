@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }   
+    table {
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+        width: 400px;
+        text-align: center;
+    }
+    col.cidade {
+        background-color: aqua;
+    }
+    .csexo {
+        background-color: darkblue;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome"> 
+            <col class="cidade"> 
+            <col class="csexo">
+            <col class="curso"> 
+        </colgroup>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Curso</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arlindo</td>
+                <td>20</td>
+                <td>M</td>
+                <td>Recursos Humanos</td>
+            </tr>
+            <tr>
+                <td>Admira</td>
+                <td>18</td>
+                <td>F</td>
+                <td>Gestão</td>
+            </tr>
+            <tr>
+                <td>Alexandre</td>
+                <td>22</td>
+                <td>M</td>
+                <td>Electricidade</td>
+            </tr>
+            <tr>
+                <td>Allen</td>
+                <td>19</td>
+                <td>M</td>
+                <td>Informática</td>
+            </tr>
+            <tr>
+                <td>Beactriz</td>
+                <td>23</td>
+                <td>F</td>
+                <td>Eng. Informática</td>
+            </tr>
+            <tr>
+                <td>Bernardo</td>
+                <td>21</td>
+                <td>M</td>
+                <td>Mecânica</td>
+            </tr>
+            <tr>
+                <td>Casimiro</td>
+                <td>22</td>
+                <td>M</td>
+                <td>Gestão de Negócios</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
