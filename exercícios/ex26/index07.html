@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        select {
+            background-color: rgb(13, 78, 218);
+            color: white;
+            border-radius: 8px;
+            padding: 6px;
+        }
+        form > p > select > optgroup > #sps {
+            background-color: rgb(29, 70, 70);
+        }
+        option {
+            border-radius: 10px;
+        }
+        form {
+            background-color: rgb(9, 9, 241);
+            padding: 50px;
+            border-radius: 25px;
+            width: 400px;
+            margin: auto;
+            margin-top: 160px;
+        }
+        label {
+            color: aqua;
+        }
+        input {
+            background-color: #085cf8;
+            border: none;
+            padding: 7px;
+            border-radius: 8px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="iest">Província</label>
+            <select name="provincia" id="iest">
+                <option value="ecd" id="sp">--Escolha a província-</option>
+                <optgroup label="Sul">
+                    <option value="MP">Maputo Província</option>
+                    <option value="mpc">Maputo Cidade</option>
+                    <option value="gz">Gaza</option>
+                    <option value="ib">Inhambane</option>
+                </optgroup>
+                <optgroup label="Centro">
+                    <option value="sf">Sofala</option>
+                    <option value="tt">Tete</option>
+                    <option value="zb">Zambézia</option>
+                    <option value="mn">Manica</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="cd">Cabo Delgado</option>
+                    <option value="ns">Niassa</option>
+                    <option value="npl">Nampula</option>
+                </optgroup>
+            </select>
+            <label for="Idade">Idade</label>
+            <select name="Idade" id="eidadea">
+                <option value="iedade">--Sua idade--</option>
+                <option value="ida">18</option>
+                <option value="ida">19</option>
+                <option value="ida">20</option>
+                <option value="ida">21</option>
+                <option value="ida">22</option>
+                <option value="ida">23</option>
+                <option value="ida">24</option>
+                <option value="ida">25</option>
+                <option value="ida">26</option>
+                <option value="ida">27</option>
+                <option value="ida">28</option>
+                <option value="ida">29</option>
+                <option value="ida">30</option>
+                <option value="ida">30 +</option>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="iprof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Electricista</option>
+                <option>Professor</option>
+                <option>Contabilista</option>
+                <option>RH</option>
+                <option>Mecânico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">
+                Mensagem
+            </label><br>
+            <textarea name="msg" id="msg" rows="12"></textarea>
+        </p>
+        <input type="submit" value="Enviar" id="sl">
+        <input type="reset" value="Limpar">
+    </form>
+    <script>
+        var a = document.getElementById('sl')
+        var b = document.getElementById('sp')
+        a.addEventListener('mouseenter', selecao)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('click', entrar)
+        function selecao() {
+           
+             a.style.padding='5px'
+            a.style.width='110px'
+            a.style.border='3px solid #085cf8'
+            a.style.fontWeight='600'
+        }
+        function sair() {
+            a.style.background='#08f8f9'
+            a.style.padding='6px'
+            a.style.width='100px'
+            a.style.animationDuration='1s'
+            a.style.border='none'
+           
+        }
+        function entrar() {
+            a.style.width='130px'
+            a.style.padding='10px'
+        }
+        b.addEventListener('mouseover', selecionar)
+        function selecionar() {
+            b.style.display='block'
+        }
+    </script>
+        
+</body>
+</html>
