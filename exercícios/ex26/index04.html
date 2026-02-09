@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <label for="isx">Masculino</label>
+                <input type="radio" name="Sexo" id="isx">
+                <label for="isx">Femenino</label>
+                <input type="radio" name="Sexo" id="isx">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gostos</legend>
+            <p>
+                <label for="imusica">Música</label>
+                <input type="checkbox" name="musica" id="imusica">
+                <label for="ifilmes">Filmes</label>
+                <input type="checkbox" name="Filmes" id="ifilmes">
+                <label for="idesporto">Desporto</label>
+                <input type="checkbox" name="Desporto" id="idesporto">
+                <label for="iestudar">Estudar</label>
+                <input type="checkbox" name="Estudar" id="iestudar">
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
