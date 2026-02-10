@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe</title>
+    <title>Formulário</title>
     <style>
-        iframe {
-        display: block;
-        margin: auto;
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            width: 500px;
+            padding: 10px;
+            margin: auto;
+            background-color: aqua;
+            border-radius: 20px;
+            margin-top: 200px;
+        }
+        input {
+            border-radius: 6px;
+            border: none;
+            padding: 6px;
+            width: 200px;
+        }
+        input:hover {
+            background-color: rgb(170, 199, 236);
+        }
+        #nome {
+            color: rgb(11, 83, 240);
+        }
+        #sps {
+            background-color: rgb(53, 90, 212);
+            padding: 6px;
+            border-radius: 8px;
+            color: white;
+            width: 90px;
+            border: none;
+        }
+        #sps:hover {
+            background-color: rgb(17, 0, 255);
         }
     </style>
 </head>
 <body>
-    <h1>Teste com iframe</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic dolore officia numquam laboriosam omnis minus veniam voluptate quidem, itaque a deleniti. Officiis voluptates repellat tempora illo minus soluta officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam eaque mollitia optio dolores dolorem iste quae modi vel non eos delectus minima, soluta, numquam, iusto dicta voluptatum et laborum.
-    </p>
-    <iframe src="../desafiotabela/tabela03.html" frameborder="0" width="500px"></iframe>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore, ullam adipisci perspiciatis pariatur natus quam ab numquam nulla blanditiis placeat id magnam dicta veritatis doloremque consectetur recusandae velit culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, beatae aliquid atque nisi minus autem ut maiores? Ex porro, consequatur, magnam modi quos, quibusdam iure magni atque enim officiis quae!</p>
+    <div>
+        <h1>Meu primeiro formulário</h1>
+        <form action="cadrasto.php">
+            <p><label for="">Nome:</label> <input type="text" name="Nome" id="nome"> </p>
+            <p><label for="">Sobrenome:</label> <input type="text" name="Sobrenome" id="Sobrenome"> </p>
+            <p><input type="submit" value="Enviar" id="sps"></p>
+        </form>
+    </div>
 </body>
 </html>
