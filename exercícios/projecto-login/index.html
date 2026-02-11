@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+        <form action="cadastro.py" method="get">
+            <div>
+                <h2>Fazer Login</h2>
+                <p>Ola, caro(a) usuário(a)!</p>
+                <p>Para entrar novamente na sua conta insira os dados do seu e-mail e da sua senha </p>
+                <div id="pr">
+                <p><label for="e-mail">E-mail:</label>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="exemplo@gmail.com" required></p>
+                    <p>
+                    <label for="ipass">Senha:</label>
+                    <input type="password" name="ipass" id="ipass" placeholder="Máximo 6 de dígitos" required>
+                    </p>
+                    <div class="ppr"><input type="submit" value="Entrar" id="ep"></div>
+                    <p><a href="#">Esqueci a senha</a></p>
+                    <p><a href="#">Tenho uma conta</a></p>
+                </div>
+            </div>
+        </form>
+</body>
+</html>
