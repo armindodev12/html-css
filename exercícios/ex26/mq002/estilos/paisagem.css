@@ -1,7 +1,3 @@
 @charset "UTF-8";
 
 /*para tela deitada (landscape)*/
-body {
-    background-image: url(../cev-landscape.jpg);
-    background-position: left bottom;
-}

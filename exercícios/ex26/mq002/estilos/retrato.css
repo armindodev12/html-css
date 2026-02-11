@@ -1,7 +1,3 @@
 @charset "UTF-8";
 
 /*para tela em pé (retrato)*/
-body {
-    background-image: url(../cev-portrait.jpg);
-    background-position: center bottom;
-}
